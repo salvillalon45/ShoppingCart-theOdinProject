@@ -15,8 +15,9 @@ $black: #111029;
 $yellow: #d1da0e;
 $turquoiseHover: #2fc2b9;
 
-// Components
+// Pages
 // -----------------------------------------------
+@import './pages/index.scss';
 // @import '../components/components.scss';
 
 html,

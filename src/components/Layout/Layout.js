@@ -21,29 +21,31 @@ import '../../styles/global.scss';
 import './layout.scss';
 // -----------------------------------------------
 
-const Layout = ({ children }) => {
-	console.table(children);
-	const data = useStaticQuery(graphql`
-		query SiteTitleQuery {
-			site {
-				siteMetadata {
-					title
-				}
-			}
-		}
-	`);
+function Layout(props) {
+	const { id, children } = props;
+	// console.table(children);
+	console.table(props);
+	// const data = useStaticQuery(graphql`
+	// 	query SiteTitleQuery {
+	// 		site {
+	// 			siteMetadata {
+	// 				title
+	// 			}
+	// 		}
+	// 	}
+	// `);
 
 	return (
 		<>
 			{/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
 			<Header />
 
-			<main>{children}</main>
+			<main id={id}>{children}</main>
 
 			<Footer />
 		</>
 	);
-};
+}
 
 // Layout.propTypes = {
 // 	children: PropTypes.node.isRequired
