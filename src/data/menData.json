@@ -1,0 +1,51 @@
+{
+	"0": {
+		"category": "men",
+		"item_name": "Item Name 0",
+		"item_price": "$10.00",
+		"item_description": "item 0",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+	},
+	"1": {
+		"category": "men",
+		"item_name": "Item Name 1",
+		"item_price": "$20.00",
+		"item_description": "item 1",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+	},
+	"2": {
+		"category": "men",
+		"item_name": "Item Name 2",
+		"item_price": "$30.00",
+		"item_description": "item 2",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+	},
+	"3": {
+		"category": "men",
+		"item_name": "Item Name 3",
+		"item_price": "$40.00",
+		"item_description": "item 3",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+	},
+	"4": {
+		"category": "men",
+		"item_name": "Item Name 4",
+		"item_price": "$50.00",
+		"item_description": "item 4",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+	},
+	"5": {
+		"category": "men",
+		"item_name": "Item Name 5",
+		"item_price": "$60.00",
+		"item_description": "item 5",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+	},
+	"6": {
+		"category": "men",
+		"item_name": "Item Name 6",
+		"item_price": "$70.00",
+		"item_description": "item 6",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+	}
+}

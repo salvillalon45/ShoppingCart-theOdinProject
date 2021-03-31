@@ -18,6 +18,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 // Components
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
+import ShopPageContent from '../components/ShopPageContent';
 
 // Bootstrap
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -38,6 +39,8 @@ function ShopPage(props) {
 		<Layout>
 			<SEO title='Home' />
 			<h1>SHOP PAGE</h1>
+
+			<ShopPageContent />
 		</Layout>
 	);
 }
