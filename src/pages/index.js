@@ -66,19 +66,19 @@ function IndexPage() {
 
 				<Row>
 					<Col className='categoryContainer'>
-						<Link to='/shop' state={{ categoriesShow: 'shoes' }}>
+						<Link to='/shop' state={{ categoryShow: 'shoes' }}>
 							<p>Shop Shoes</p>
 						</Link>
 					</Col>
 
 					<Col className='categoryContainer'>
-						<Link to='/shop' state={{ categoriesShow: 'men' }}>
+						<Link to='/shop' state={{ categoryShow: 'men' }}>
 							<p>Shop Men's Clothing</p>
 						</Link>
 					</Col>
 
 					<Col className='categoryContainer'>
-						<Link to='/shop' state={{ categoriesShow: 'women' }}>
+						<Link to='/shop' state={{ categoryShow: 'women' }}>
 							<p>Shop Women's Clothing</p>
 						</Link>
 					</Col>

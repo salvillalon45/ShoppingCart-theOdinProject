@@ -29,6 +29,7 @@ function ShopPageContent(props) {
 	const [items, setItems] = React.useState({});
 
 	function determineCategory() {
+		console.log({ categoryShow });
 		if (categoryShow === 'men') {
 			setItems(menData);
 		} else if (categoryShow === 'women') {
@@ -41,10 +42,12 @@ function ShopPageContent(props) {
 	}
 
 	React.useEffect(() => {
+		console.log('Inside useEffect 0');
 		determineCategory();
 	}, [categoryShow]);
 
-	return <ShopItems />;
+	// Include sidebar
+	return <ShopItems data={items} />;
 }
 
 export default ShopPageContent;

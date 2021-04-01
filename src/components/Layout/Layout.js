@@ -24,7 +24,7 @@ import './layout.scss';
 function Layout(props) {
 	const { id, children } = props;
 	// console.table(children);
-	console.table(props);
+	// console.table(props);
 	// const data = useStaticQuery(graphql`
 	// 	query SiteTitleQuery {
 	// 		site {

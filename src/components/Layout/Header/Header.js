@@ -40,7 +40,9 @@ function Header(props) {
 					</Nav.Link>
 
 					<Nav.Link>
-						<Link to='/shop'>Shop</Link>
+						<Link to='/shop' state={{ categoryShow: 'all' }}>
+							Shop
+						</Link>
 					</Nav.Link>
 
 					<Nav.Link>
