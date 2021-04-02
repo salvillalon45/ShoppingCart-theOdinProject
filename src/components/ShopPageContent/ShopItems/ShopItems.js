@@ -13,7 +13,6 @@ import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // Bootstrap
-import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 
 // Components
@@ -33,6 +32,7 @@ function ShopItems(props) {
 
 			return (
 				<Item
+					itemIndex={index}
 					itemName={itemName}
 					itemPrice={itemPrice}
 					itemImage={itemImage}
@@ -43,7 +43,6 @@ function ShopItems(props) {
 	}
 
 	function showItems() {
-		console.log('Inside showItems');
 		if (
 			items && // 👈 null and undefined check
 			Object.keys(items).length === 0 &&
@@ -52,15 +51,14 @@ function ShopItems(props) {
 			return null;
 		}
 
-		console.log({ items });
 		return items;
 	}
 
 	React.useEffect(() => {
-		console.log('Inside useEffect 1');
-		console.log(data);
+		// console.log('Inside useEffect 1');
+		// console.log(data);
 		const result = createItems(data);
-		console.log(result);
+		// console.log(result);
 		setItems(result);
 	}, [data]);
 

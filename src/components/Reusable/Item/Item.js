@@ -11,6 +11,9 @@
 
 // React
 import * as React from 'react';
+
+// Gatsby
+import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // Bootstrap
@@ -18,21 +21,23 @@ import Card from 'react-bootstrap/Card';
 // -----------------------------------------------
 
 function Item(props) {
-	const { itemImage, itemName, itemPrice } = props;
+	const { itemImage, itemName, itemPrice, itemIndex } = props;
 
 	return (
-		<Card>
-			<Card.Img variant='top' src={itemImage} />
+		<Link to={'/itemDetail/' + itemIndex} state={{ itemObj: props }}>
+			<Card>
+				<Card.Img variant='top' src={itemImage} />
 
-			<Card.Body>
-				<Card.Title>{itemName}</Card.Title>
-				<Card.Text>{itemPrice}</Card.Text>
-			</Card.Body>
+				<Card.Body>
+					<Card.Title>{itemName}</Card.Title>
+					<Card.Text>{itemPrice}</Card.Text>
+				</Card.Body>
 
-			{/* <Card.Footer>
+				{/* <Card.Footer>
 				<small className='text-muted'>Last updated 3 mins ago</small>
 			</Card.Footer> */}
-		</Card>
+			</Card>
+		</Link>
 	);
 }
 

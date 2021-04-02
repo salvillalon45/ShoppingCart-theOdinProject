@@ -13,10 +13,13 @@ import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // Bootstrap
-import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 // Components
 import ShopItems from './ShopItems/ShopItems';
+import SideBar from '../Reusable/SideBar';
 
 // Data
 import menData from '../../data/menData.json';
@@ -29,7 +32,6 @@ function ShopPageContent(props) {
 	const [items, setItems] = React.useState({});
 
 	function determineCategory() {
-		console.log({ categoryShow });
 		if (categoryShow === 'men') {
 			setItems(menData);
 		} else if (categoryShow === 'women') {
@@ -42,12 +44,24 @@ function ShopPageContent(props) {
 	}
 
 	React.useEffect(() => {
-		console.log('Inside useEffect 0');
+		// console.log('Inside useEffect 0');
 		determineCategory();
 	}, [categoryShow]);
 
 	// Include sidebar
-	return <ShopItems data={items} />;
+	return (
+		<Container>
+			<Row>
+				<Col>
+					<SideBar />
+				</Col>
+
+				<Col>
+					<ShopItems data={items} />;
+				</Col>
+			</Row>
+		</Container>
+	);
 }
 
 export default ShopPageContent;

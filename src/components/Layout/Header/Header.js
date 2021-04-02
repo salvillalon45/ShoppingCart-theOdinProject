@@ -25,7 +25,9 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 function Header(props) {
 	return (
 		<Navbar className='purpleBackground'>
-			<Navbar.Brand className='xLarge'>Sal's Styles</Navbar.Brand>
+			<Navbar.Brand className='xLarge'>
+				<Link to='/'>Sal's Styles</Link>
+			</Navbar.Brand>
 
 			<Navbar.Toggle />
 
