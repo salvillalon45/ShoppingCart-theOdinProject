@@ -23,6 +23,12 @@ import './layout.scss';
 
 function Layout(props) {
 	const { id, children } = props;
+	const [cartItems, setCartItems] = React.useState([]);
+
+	function handleAddToCart(newItem) {
+		console.log('What is newItem:: ' + newItem);
+		setCartItems(cartItems.concat(newItem));
+	}
 	// console.table(children);
 	// console.table(props);
 	// const data = useStaticQuery(graphql`
