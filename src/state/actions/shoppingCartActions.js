@@ -1,6 +1,6 @@
 // -----------------------------------------------
 //
-// state -> index.js
+// actions -> shoppingCartActions.js
 // Desc: Actions for shopping cart. They help us get the data
 //
 // -----------------------------------------------

@@ -22,7 +22,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 // Redux
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { saveCartItem } from '../../state/actions/shoppingCartActions';
 
 // Util
@@ -33,7 +33,6 @@ function ItemDetailPageContent(props) {
 	const { itemImage, itemName, itemPrice, itemIndex } = props.item;
 	const [quantity, setQuantity] = React.useState(1);
 	const [addedToCart, setAddedToCart] = React.useState(false);
-	const shoppingCartState = useSelector(state => state.shoppingCart);
 	const dispatch = useDispatch();
 
 	function onChange(event) {
@@ -64,11 +63,7 @@ function ItemDetailPageContent(props) {
 					<Form onSubmit={onSubmit}>
 						<Form.Group controlId='exampleForm.ControlSelect1'>
 							<Form.Label>Add How Many To Cart?</Form.Label>
-							<Form.Control
-								as='select'
-								// value={quantity}
-								onChange={onChange}
-							>
+							<Form.Control as='select' onChange={onChange}>
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>

@@ -1,6 +1,6 @@
 // -----------------------------------------------
 //
-// State -> reducer.js
+// State -> shoppingCartReducer.js
 // Desc: To Help us reduce the actions
 //
 // -----------------------------------------------
