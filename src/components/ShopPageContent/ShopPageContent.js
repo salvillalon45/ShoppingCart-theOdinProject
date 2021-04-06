@@ -25,24 +25,13 @@ import SideBar from '../Reusable/SideBar';
 import menData from '../../data/menData.json';
 import womenData from '../../data/womenData.json';
 import shoesData from '../../data/shoesData.json';
-
-import { useDispatch, useSelector } from 'react-redux';
-import { setTest } from '../../state/actions/shoppingCartActions';
 // -----------------------------------------------
 
 function ShopPageContent(props) {
 	const { categoryShow } = props;
 	const [items, setItems] = React.useState({});
-	const dispatch = useDispatch();
-
-	console.log(props);
-
-	// const portfolioState = useSelector(state => state);
-	// console.table(portfolioState);
 
 	function determineCategory() {
-		dispatch(setTest('yes'));
-
 		if (categoryShow === 'men') {
 			setItems(menData);
 		} else if (categoryShow === 'women') {

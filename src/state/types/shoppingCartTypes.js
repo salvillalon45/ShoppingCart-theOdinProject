@@ -1,3 +1,3 @@
-const TEST = 'TEST';
+const SAVE_CART_ITEM = 'SAVE_CART_ITEM';
 
-export { TEST };
+export { SAVE_CART_ITEM };

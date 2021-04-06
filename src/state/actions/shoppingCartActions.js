@@ -17,14 +17,30 @@ import * as shoppingCartTypes from '../types/shoppingCartTypes';
 // 	value
 // });
 
-export const setTest = (message, storeType) => dispatch => {
-	dispatch({
-		type: 'TEST',
-		payload: {
-			message: message
-		}
-	});
-};
+// export const setTest = message => dispatch => {
+// 	dispatch({
+// 		type: 'TEST',
+// 		payload: {
+// 			message: message
+// 		}
+// 	});
+// };
+
+export const saveCartItem = item => ({
+	type: shoppingCartTypes.SAVE_CART_ITEM,
+	payload: {
+		item
+	}
+});
+
+// export const setTest = (message, storeType) => dispatch => {
+// 	dispatch({
+// 		type: 'TEST',
+// 		payload: {
+// 			message: message
+// 		}
+// 	});
+// };
 
 // export const setTest = (message, type) => dispatch => {
 // 	dispatch({

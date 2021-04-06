@@ -12,30 +12,19 @@ import * as shoppingCartTypes from '../types/shoppingCartTypes';
 
 const initialState = {
 	isLoading: false,
-	message: ''
+	cartItems: []
 };
 
 const shoppingCartReducer = (state = initialState, action) => {
+	console.log({ action });
 	switch (action.type) {
-		case shoppingCartTypes.TEST:
+		case shoppingCartTypes.SAVE_CART_ITEM:
+			state.cartItems.push(action.payload.item);
+
 			return {
 				...state,
-				message: action.payload.message
+				cartItems: state.cartItems
 			};
-
-		// case portfolioTypes.STORE_EDUCATION_DATA:
-		// 	return {
-		// 		...state,
-		// 		message: action.payload.message,
-		// 		educationData: action.payload.educationData
-		// 	};
-
-		// case portfolioTypes.STORE_WORK_DATA:
-		// 	return {
-		// 		...state,
-		// 		message: action.payload.message,
-		// 		workData: action.payload.workData
-		// 	};
 
 		// case portfolioTypes.PROJECTS_ERROR:
 		// 	return {
