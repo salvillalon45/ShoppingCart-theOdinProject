@@ -26,10 +26,10 @@ import * as shoppingCartTypes from '../types/shoppingCartTypes';
 // 	});
 // };
 
-export const saveCartItem = item => ({
+export const saveCartItem = cartItem => ({
 	type: shoppingCartTypes.SAVE_CART_ITEM,
 	payload: {
-		item
+		cartItem
 	}
 });
 

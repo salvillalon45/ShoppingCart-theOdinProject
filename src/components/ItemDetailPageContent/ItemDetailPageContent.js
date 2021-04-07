@@ -46,8 +46,8 @@ function ItemDetailPageContent(props) {
 
 		setAddedToCart(true);
 
-		const item = createCartItem(itemPrice, quantity, props);
-		dispatch(saveCartItem(item));
+		const cartItem = createCartItem(itemPrice, quantity, props);
+		dispatch(saveCartItem(cartItem));
 	}
 
 	return (

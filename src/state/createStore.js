@@ -27,6 +27,7 @@ const createStore = () =>
 		rootReducer,
 		initialState,
 		// This helps me see the redux store in the Redux Dev Tool
+		// typeof window !== 'undefined' &&
 		window.__REDUX_DEVTOOLS_EXTENSION__ &&
 			window.__REDUX_DEVTOOLS_EXTENSION__()
 	);

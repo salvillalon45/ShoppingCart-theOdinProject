@@ -20,26 +20,47 @@ import Item from '../../Reusable/Item';
 // -----------------------------------------------
 
 function ShopItems(props) {
-	const { data } = props;
+	const { data, categoryShow } = props;
 	const [items, setItems] = React.useState({});
 
-	function createItems(data, type) {
-		return Object.values(data).map((obj, index) => {
-			const itemName = obj.item_name;
-			const itemPrice = obj.item_price;
-			const itemDescription = obj.item_description;
-			const itemImage = obj.item_image;
+	function createItems(data) {
+		if (categoryShow === 'all') {
+			return Object.values(data).map(categoryObj => {
+				return Object.values(categoryObj).map((obj, index) => {
+					const itemName = obj.item_name;
+					const itemPrice = obj.item_price;
+					const itemDescription = obj.item_description;
+					const itemImage = obj.item_image;
 
-			return (
-				<Item
-					itemIndex={index}
-					itemName={itemName}
-					itemPrice={itemPrice}
-					itemImage={itemImage}
-					itemDescription={itemDescription}
-				/>
-			);
-		});
+					return (
+						<Item
+							itemIndex={index}
+							itemName={itemName}
+							itemPrice={itemPrice}
+							itemImage={itemImage}
+							itemDescription={itemDescription}
+						/>
+					);
+				});
+			});
+		} else {
+			return Object.values(data).map((obj, index) => {
+				const itemName = obj.item_name;
+				const itemPrice = obj.item_price;
+				const itemDescription = obj.item_description;
+				const itemImage = obj.item_image;
+
+				return (
+					<Item
+						itemIndex={index}
+						itemName={itemName}
+						itemPrice={itemPrice}
+						itemImage={itemImage}
+						itemDescription={itemDescription}
+					/>
+				);
+			});
+		}
 	}
 
 	function showItems() {
@@ -55,10 +76,7 @@ function ShopItems(props) {
 	}
 
 	React.useEffect(() => {
-		// console.log('Inside useEffect 1');
-		// console.log(data);
 		const result = createItems(data);
-		// console.log(result);
 		setItems(result);
 	}, [data]);
 

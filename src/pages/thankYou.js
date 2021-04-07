@@ -1,14 +1,27 @@
-// import * as React from 'react';
-// import { Link } from 'gatsby';
+// -----------------------------------------------
+//
+// Pages -> thankYou.js
+// Desc: Thank You Page
+//
+// -----------------------------------------------
 
-// import Layout from '../components/Layout';
-// import SEO from '../components/seo';
+// -----------------------------------------------
+// Imports
 
-// const ThankYouPage = () => (
-// 	<Layout>
-// 		<SEO title='Home' />
-// 		<h1>ThankYouPage PAGE</h1>
-// 	</Layout>
-// );
+// React
+import * as React from 'react';
 
-// export default ThankYouPage;
+// Components
+import Layout from '../components/Layout';
+import SEO from '../components/seo';
+import ThankYouPageContent from '../components/ThankYouPageContent';
+// -----------------------------------------------
+
+const ThankYouPage = () => (
+	<Layout>
+		<SEO title='Home' />
+		<ThankYouPageContent />
+	</Layout>
+);
+
+export default ThankYouPage;

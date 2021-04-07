@@ -1,8 +1,20 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
+// -----------------------------------------------
+//
+// Pages -> about.js
+// Desc: About Page
+//
+// -----------------------------------------------
 
+// -----------------------------------------------
+// Imports
+
+// React
+import * as React from 'react';
+
+// Components
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
+// -----------------------------------------------
 
 const AboutPage = () => (
 	<Layout>

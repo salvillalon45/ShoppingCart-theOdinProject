@@ -39,6 +39,8 @@ function ShopPageContent(props) {
 		} else if (categoryShow === 'shoes') {
 			setItems(shoesData);
 		} else {
+			// const all = Object.assign({}, menData, shoesData, womenData);
+			// setItems(all);
 			setItems({ menData, shoesData, womenData });
 		}
 	}
@@ -57,7 +59,7 @@ function ShopPageContent(props) {
 				</Col>
 
 				<Col>
-					<ShopItems data={items} />;
+					<ShopItems data={items} categoryShow={categoryShow} />;
 				</Col>
 			</Row>
 		</Container>
