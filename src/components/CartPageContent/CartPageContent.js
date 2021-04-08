@@ -22,6 +22,7 @@ import Button from 'react-bootstrap/Button';
 
 // Components
 import ItemsTable from '../ItemsTable';
+import TotalCost from '../TotalCost';
 // -----------------------------------------------
 
 function CartPageContent(props) {
@@ -36,6 +37,10 @@ function CartPageContent(props) {
 							Checkout
 						</Button>
 					</Link>
+				</Col>
+
+				<Col>
+					<TotalCost />
 				</Col>
 			</Row>
 		</Container>

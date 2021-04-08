@@ -10,7 +10,6 @@
 
 // React
 import * as React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 
 // Bootstrap
 import CardColumns from 'react-bootstrap/CardColumns';

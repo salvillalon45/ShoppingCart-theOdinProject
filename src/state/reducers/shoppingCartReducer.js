@@ -26,6 +26,16 @@ const shoppingCartReducer = (state = initialState, action) => {
 				cartItems: state.cartItems
 			};
 
+		case shoppingCartTypes.DELETE_CART_ITEM:
+			console.log('BEFORE');
+			console.log(state.cartItems);
+			const newArray = state.cartItems.splice(action.payload.index, 1);
+			console.log('AFTER');
+			console.log(state.cartItems);
+			return {
+				...state,
+				cartItems: state.cartItems
+			};
 		// case portfolioTypes.PROJECTS_ERROR:
 		// 	return {
 		// 		...state,
