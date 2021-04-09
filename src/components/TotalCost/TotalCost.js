@@ -29,16 +29,14 @@ import { useSelector } from 'react-redux';
 // -----------------------------------------------
 
 function TotalCost() {
-	// const [total];
 	const shoppingCartState = useSelector(state => state.shoppingCart);
 
 	function calculateTotalCost() {
 		const { cartItems } = shoppingCartState;
 		let total = 0;
-		let totalItems = 0;
 
 		cartItems.map(cartItem => {
-			const { quantity, total_price } = cartItem;
+			const { total_price } = cartItem;
 			total = total + total_price;
 		});
 

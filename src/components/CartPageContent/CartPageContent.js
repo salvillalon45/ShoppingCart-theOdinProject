@@ -23,9 +23,22 @@ import Button from 'react-bootstrap/Button';
 // Components
 import ItemsTable from '../ItemsTable';
 import TotalCost from '../TotalCost';
+
+// Redux
+import { useSelector } from 'react-redux';
 // -----------------------------------------------
 
-function CartPageContent(props) {
+function CartPageContent() {
+	const shoppingCartState = useSelector(state => state.shoppingCart);
+
+	function checkCart() {
+		if (shoppingCartState.cartItems.length === 0) {
+			return true;
+		}
+
+		return false;
+	}
+
 	return (
 		<Container>
 			<Row>
@@ -33,7 +46,11 @@ function CartPageContent(props) {
 					<ItemsTable />
 
 					<Link to='/thankYou'>
-						<Button variant='primary' type='submit'>
+						<Button
+							variant='primary'
+							type='submit'
+							disabled={checkCart()}
+						>
 							Checkout
 						</Button>
 					</Link>

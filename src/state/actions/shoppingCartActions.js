@@ -25,3 +25,7 @@ export const deleteCartItem = index => ({
 		index
 	}
 });
+
+export const resetCart = () => ({
+	type: shoppingCartTypes.RESET_CART
+});

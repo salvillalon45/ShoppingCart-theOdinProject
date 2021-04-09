@@ -11,20 +11,27 @@
 // React
 import * as React from 'react';
 
-// Gatsby
-import { Link } from 'gatsby';
-
 // Bootstrap
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
-// Components
-import ItemsTable from '../ItemsTable';
+// Redux
+import { resetCart } from '../../state/actions/shoppingCartActions';
+import { useDispatch } from 'react-redux';
 // -----------------------------------------------
 
 function ThankYouPageContent() {
+	const dispatch = useDispatch();
+
+	function reset() {
+		dispatch(resetCart());
+	}
+
+	React.useEffect(() => {
+		reset();
+	}, []);
+
 	return (
 		<Container>
 			<Row>
