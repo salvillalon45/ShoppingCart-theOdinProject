@@ -22,10 +22,10 @@ import Nav from 'react-bootstrap/Nav';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 // -----------------------------------------------
 
-function Header(props) {
+function Header() {
 	return (
 		<Navbar className='purpleBackground'>
-			<Navbar.Brand className='xLarge'>
+			<Navbar.Brand className='xxLarge'>
 				<Link to='/'>Sal's Styles</Link>
 			</Navbar.Brand>
 

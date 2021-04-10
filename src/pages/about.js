@@ -14,12 +14,13 @@ import * as React from 'react';
 // Components
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
+import AboutPageContent from '../components/AboutPageContent';
 // -----------------------------------------------
 
 const AboutPage = () => (
 	<Layout>
 		<SEO title='Home' />
-		<h1>CartPage PAGE</h1>
+		<AboutPageContent />
 	</Layout>
 );
 

@@ -21,8 +21,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 // Components
-import ItemsTable from '../ItemsTable';
-import TotalCost from '../TotalCost';
+import ItemsTable from './ItemsTable';
+import TotalCost from './TotalCost';
 
 // Redux
 import { useSelector } from 'react-redux';
