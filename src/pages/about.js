@@ -17,11 +17,14 @@ import SEO from '../components/seo';
 import AboutPageContent from '../components/AboutPageContent';
 // -----------------------------------------------
 
-const AboutPage = () => (
-	<Layout>
-		<SEO title='Home' />
-		<AboutPageContent />
-	</Layout>
-);
+function AboutPage() {
+	const id = 'aboutContainer';
 
+	return (
+		<Layout id={id}>
+			<SEO title='Home' />
+			<AboutPageContent />
+		</Layout>
+	);
+}
 export default AboutPage;

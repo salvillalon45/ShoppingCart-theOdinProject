@@ -38,7 +38,7 @@ function Footer() {
 			<Container>
 				<Row>
 					<Col className='companyInfoContainer'>
-						<h2>Company Info</h2>
+						<p className='textCenter'>COMPANY INFO</p>
 
 						<ul>
 							<Link to='/about'>
@@ -60,7 +60,7 @@ function Footer() {
 					</Col>
 
 					<Col className='connectWithUsContainer'>
-						<h2>Connect With Us</h2>
+						<p className='textCenter'>Connect With Us</p>
 
 						<Row className='connectLogos' id='row1'>
 							<FacebookIcon />
@@ -76,7 +76,10 @@ function Footer() {
 					</Col>
 
 					<Col className='logoContainer'>
-						<Image src={GatsbyIcon} fluid />
+						<p className='xxLarge textCenter'>Sal's Styles</p>
+						<p className='textCenter' id='sub'>
+							Since 1993
+						</p>
 					</Col>
 				</Row>
 			</Container>

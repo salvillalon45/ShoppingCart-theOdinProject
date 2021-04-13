@@ -22,22 +22,31 @@ function AboutPageContent() {
 		<Container>
 			<Row>
 				<Col>
-					<h1>Sal's Styles</h1>
-					<p>Giving You The Styles You Need Since 1993</p>
-					<p>
-						Sal's Styles is dedicated to delivering an exclusive
-						collection of the most relevant brands and styles to the
-						community. Curated in{' '}
-						<a href='https://en.wikipedia.org/wiki/Calexico,_California'>
-							Calexico in the Imperial
-						</a>
-						Valley.
-					</p>
-					<p>
-						<a href='https://www.linkedin.com/in/salvadorvillalon/'>
-							Meet the Founder
-						</a>
-					</p>
+					<div className='aboutContentContainer'>
+						<h1>Sal's Styles</h1>
+						<p className='larger'>
+							Giving You The Styles You Need Since 1993
+						</p>
+
+						<div className='line' />
+
+						<p>
+							Sal's Styles is dedicated to delivering an exclusive
+							collection of the most relevant brands and styles to
+							the community.{' '}
+						</p>
+						<p>
+							Curated in{' '}
+							<a href='https://en.wikipedia.org/wiki/Calexico,_California'>
+								Calexico in the Imperial Valley
+							</a>
+						</p>
+						<p>
+							<a href='https://www.linkedin.com/in/salvadorvillalon/'>
+								Meet the Founder
+							</a>
+						</p>
+					</div>
 				</Col>
 			</Row>
 		</Container>

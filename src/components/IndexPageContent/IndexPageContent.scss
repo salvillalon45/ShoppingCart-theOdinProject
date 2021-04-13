@@ -1,0 +1,80 @@
+// -----------------------------------------------
+//
+// Styling for Index Page
+//
+// -----------------------------------------------
+
+#indexContainer {
+	.jumbotronContainer {
+		background-repeat: no-repeat;
+		background-position: center;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+		background-size: cover;
+		height: 100vh;
+	}
+
+	.overlay {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 50px;
+
+		// width: 100%;
+		// height: 100vh;
+		// background-color: rgba(0, 0, 0, 0.5);
+		// background-repeat: no-repeat;
+		// background-position: center;
+		// padding-top: 12rem;
+		// padding-bottom: 28rem;
+		// background-size: cover;
+		// height: 100vh;
+		// position: relative;
+		// top: -160px;
+		// height: 100vh;
+	}
+
+	.introTextContainer {
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		#title {
+			font-size: xx-large;
+			font-family: $sec;
+		}
+
+		p {
+			font-size: larger;
+		}
+	}
+
+	#row2 {
+		margin-bottom: -60px;
+
+		.col {
+			padding-right: unset;
+			padding-left: unset;
+		}
+
+		.categoryContainer {
+			background-repeat: no-repeat;
+			background-position: center;
+			padding-top: 10rem;
+			padding-bottom: 10rem;
+			background-size: cover;
+			text-align: center;
+			height: 200px;
+
+			a {
+				color: #f6ecea;
+				text-decoration: none;
+			}
+
+			p {
+				background-color: rgba(0, 0, 0, 0.5);
+				font-size: xx-large;
+				font-family: $sec;
+			}
+		}
+	}
+}

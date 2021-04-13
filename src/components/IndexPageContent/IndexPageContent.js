@@ -22,6 +22,9 @@ import Col from 'react-bootstrap/Col';
 
 // Images
 import image from '../../images/jb2.png';
+import sq3 from '../../images/sq3.jpg';
+import sq2 from '../../images/sq2.jpg';
+import sq1 from '../../images/sq1.jpg';
 // -----------------------------------------------
 
 function IndexPageContent() {
@@ -46,34 +49,52 @@ function IndexPageContent() {
 				</div>
 			</Jumbotron>
 
-			<Container>
+			<Container fluid>
 				<Row>
 					<Col>
 						<div className='introTextContainer textCenter'>
-							<h2>Need a fresh new look?</h2>
+							<p id='title'>Need a fresh new look?</p>
 							<p>At Sal's style you will find what you need to</p>
 							<p>get a new a look!</p>
 						</div>
 					</Col>
 				</Row>
 
-				<Row>
-					<Col className='categoryContainer'>
-						<Link to='/shop' state={{ categoryShow: 'shoes' }}>
-							<p>Shop Shoes</p>
-						</Link>
+				<Row id='row2'>
+					<Col>
+						<div
+							className='categoryContainer'
+							id='sq1'
+							style={{ backgroundImage: `url(${sq1})` }}
+						>
+							<Link to='/shop' state={{ categoryShow: 'shoes' }}>
+								<p>Shop Shoes</p>
+							</Link>
+						</div>
 					</Col>
 
-					<Col className='categoryContainer'>
-						<Link to='/shop' state={{ categoryShow: 'men' }}>
-							<p>Shop Men's Clothing</p>
-						</Link>
+					<Col>
+						<div
+							className='categoryContainer'
+							id='sq2'
+							style={{ backgroundImage: `url(${sq2})` }}
+						>
+							<Link to='/shop' state={{ categoryShow: 'men' }}>
+								<p>Shop Men's Clothing</p>
+							</Link>
+						</div>
 					</Col>
 
-					<Col className='categoryContainer'>
-						<Link to='/shop' state={{ categoryShow: 'women' }}>
-							<p>Shop Women's Clothing</p>
-						</Link>
+					<Col>
+						<div
+							className='categoryContainer'
+							id='sq3'
+							style={{ backgroundImage: `url(${sq3})` }}
+						>
+							<Link to='/shop' state={{ categoryShow: 'women' }}>
+								<p>Shop Women's Clothing</p>
+							</Link>
+						</div>
 					</Col>
 				</Row>
 			</Container>

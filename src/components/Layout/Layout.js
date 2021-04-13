@@ -18,7 +18,7 @@ import Footer from './Footer';
 
 // Styling
 import '../../styles/global.scss';
-import './layout.scss';
+// import './layout.scss';
 // -----------------------------------------------
 
 function Layout(props) {
