@@ -18,7 +18,7 @@ import AboutPageContent from '../components/AboutPageContent';
 // -----------------------------------------------
 
 function AboutPage() {
-	const id = 'aboutContainer';
+	const id = 'aboutPageContainer';
 
 	return (
 		<Layout id={id}>

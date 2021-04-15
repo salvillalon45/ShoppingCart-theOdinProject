@@ -17,11 +17,16 @@ import SEO from '../components/seo';
 import ThankYouPageContent from '../components/ThankYouPageContent';
 // -----------------------------------------------
 
-const ThankYouPage = () => (
-	<Layout>
-		<SEO title='Home' />
-		<ThankYouPageContent />
-	</Layout>
-);
+function ThankYouPage() {
+	const id = 'thankYouPageContainer';
+
+	return (
+		<Layout id={id}>
+			<SEO title='Home' />
+
+			<ThankYouPageContent />
+		</Layout>
+	);
+}
 
 export default ThankYouPage;

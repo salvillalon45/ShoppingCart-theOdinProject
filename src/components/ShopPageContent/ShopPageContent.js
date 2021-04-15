@@ -19,7 +19,7 @@ import Col from 'react-bootstrap/Col';
 
 // Components
 import ShopItems from './ShopItems/ShopItems';
-import SideBar from '../Reusable/SideBar';
+import SideBar from './SideBar';
 
 // Data
 import menData from '../../data/menData.json';
@@ -39,22 +39,19 @@ function ShopPageContent(props) {
 		} else if (categoryShow === 'shoes') {
 			setItems(shoesData);
 		} else {
-			// const all = Object.assign({}, menData, shoesData, womenData);
-			// setItems(all);
 			setItems({ menData, shoesData, womenData });
 		}
 	}
 
 	React.useEffect(() => {
-		// console.log('Inside useEffect 0');
 		determineCategory();
 	}, [categoryShow]);
 
-	// Include sidebar
 	return (
 		<Container>
 			<Row>
 				<Col>
+					<p className='bigHeading'>Categories</p>
 					<SideBar />
 				</Col>
 
@@ -65,19 +62,5 @@ function ShopPageContent(props) {
 		</Container>
 	);
 }
-
-// function mapStateToProps(state) {
-// 	({
-// 		selectedVariation: state.productDisplay.selectedVariation
-// 	});
-// }
-
-// function mapDispatchToProps(dispatch) {
-// 	({
-// 		setDefaultVariation: variation =>
-// 			dispatch(setDefaultVariation(variation))
-// 	});
-// }
-// export default connect(mapStateToProps, mapDispatchToProps)(ShopPageContent);
 
 export default ShopPageContent;

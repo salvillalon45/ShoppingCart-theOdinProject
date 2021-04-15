@@ -24,6 +24,7 @@ function AboutPageContent() {
 				<Col>
 					<div className='aboutContentContainer'>
 						<h1>Sal's Styles</h1>
+
 						<p className='larger'>
 							Giving You The Styles You Need Since 1993
 						</p>

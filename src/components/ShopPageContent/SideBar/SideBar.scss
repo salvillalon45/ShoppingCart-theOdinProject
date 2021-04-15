@@ -1,8 +1,12 @@
 // -----------------------------------------------
 //
-// Styling for the Total Cost Component in the Cart Page
+// Styling for Sidebar
 //
 // -----------------------------------------------
 
-.totalCostContainer {
+.sidebarContainer {
+	a {
+		color: $black;
+		text-decoration: none;
+	}
 }

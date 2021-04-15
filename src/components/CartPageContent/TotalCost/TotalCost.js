@@ -45,8 +45,10 @@ function TotalCost() {
 
 	return (
 		<div className='totalCostContainer'>
-			<p>Order Summary</p>
-			<p>Total Cost: ${calculateTotalCost()}</p>
+			<p className='sec bold larger upper'>Order Summary</p>
+			<p>
+				Total Cost: <b>${calculateTotalCost()}</b>
+			</p>
 		</div>
 	);
 }

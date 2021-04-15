@@ -1,51 +1,44 @@
 {
 	"0": {
 		"category": "men",
-		"item_name": "Item Name 0",
+		"item_name": "Green Tee",
 		"item_price": "$10.89",
-		"item_description": "item 0",
+		"item_description": "Bought by 12 people in the past day!",
 		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
 	},
 	"1": {
 		"category": "men",
-		"item_name": "Item Name 1",
+		"item_name": "Nice Shirt",
 		"item_price": "$20.67",
-		"item_description": "item 1",
-		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+		"item_description": "Bought by 58 people in the past day!",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwa08f650a/product_images/0097112540038NEW_00_010.jpg?sw=690&sh=1070&sm=fit"
 	},
 	"2": {
 		"category": "men",
-		"item_name": "Item Name 2",
+		"item_name": "White Shirt",
 		"item_price": "$30.34",
-		"item_description": "item 2",
-		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+		"item_description": "Bought by 90 people in the past day!",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw97dfc91c/product_images/0097522800039NEW_00_010.jpg?sw=690&sh=1070&sm=fit"
 	},
 	"3": {
 		"category": "men",
-		"item_name": "Item Name 3",
+		"item_name": "Dyed Shorts",
 		"item_price": "$40.12",
-		"item_description": "item 3",
-		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+		"item_description": "Bought by 900 people in the past day!",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw636827bf/product_images/0172513430009NEW_00_089.jpg?sw=690&sh=1070&sm=fit"
 	},
 	"4": {
 		"category": "men",
-		"item_name": "Item Name 4",
+		"item_name": "Swim Trunks",
 		"item_price": "$50.96",
-		"item_description": "item 4",
-		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+		"item_description": "Bought by 790 people in the past day!",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwe7e69391/product_images/0150454210166NEW_00_040.jpg?sw=690&sh=1070&sm=fit"
 	},
 	"5": {
 		"category": "men",
-		"item_name": "Item Name 5",
+		"item_name": "White Jeans",
 		"item_price": "$60.33",
-		"item_description": "item 5",
-		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
-	},
-	"6": {
-		"category": "men",
-		"item_name": "Item Name 6",
-		"item_price": "$70.51",
-		"item_description": "item 6",
-		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw177f11a7/product_images/0097499380100NEW_00_135.jpg?sw=690&sh=1070&sm=fit"
+		"item_description": "Bought by 123 people in the past day!",
+		"item_image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw06b9d086/product_images/0135502750039NEW_00_089.jpg?sw=690&sh=1070&sm=fit"
 	}
 }

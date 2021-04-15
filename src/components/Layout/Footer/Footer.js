@@ -18,7 +18,6 @@ import { Link } from 'gatsby';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 
 // Material UI
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -38,7 +37,7 @@ function Footer() {
 			<Container>
 				<Row>
 					<Col className='companyInfoContainer'>
-						<p className='textCenter'>COMPANY INFO</p>
+						<p className='bigHeading textCenter'>COMPANY INFO</p>
 
 						<ul>
 							<Link to='/about'>
@@ -60,7 +59,7 @@ function Footer() {
 					</Col>
 
 					<Col className='connectWithUsContainer'>
-						<p className='textCenter'>Connect With Us</p>
+						<p className='bigHeading textCenter'>Connect With Us</p>
 
 						<Row className='connectLogos' id='row1'>
 							<FacebookIcon />
@@ -76,7 +75,7 @@ function Footer() {
 					</Col>
 
 					<Col className='logoContainer'>
-						<p className='xxLarge textCenter'>Sal's Styles</p>
+						<p className='bigHeading textCenter'>Sal's Styles</p>
 						<p className='textCenter' id='sub'>
 							Since 1993
 						</p>

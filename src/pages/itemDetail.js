@@ -19,7 +19,7 @@ import ItemDetailPageContent from '../components/ItemDetailPageContent';
 
 function ItemDetailPage(props) {
 	console.table(props);
-	const id = 'itemDetailContainer';
+	const id = 'itemDetailPageContainer';
 	const item = props.location.state.itemObj;
 
 	return (

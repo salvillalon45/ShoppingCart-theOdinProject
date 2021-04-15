@@ -44,20 +44,22 @@ function CartPageContent() {
 			<Row>
 				<Col>
 					<ItemsTable />
-
-					<Link to='/thankYou'>
-						<Button
-							variant='primary'
-							type='submit'
-							disabled={checkCart()}
-						>
-							Checkout
-						</Button>
-					</Link>
 				</Col>
 
 				<Col>
-					<TotalCost />
+					<div className='proceedToCheckoutContainer'>
+						<TotalCost />
+
+						<Link to='/thankYou'>
+							<Button
+								variant='primary'
+								type='submit'
+								disabled={checkCart()}
+							>
+								Checkout
+							</Button>
+						</Link>
+					</div>
 				</Col>
 			</Row>
 		</Container>

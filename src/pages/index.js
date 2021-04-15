@@ -18,12 +18,12 @@ import IndexPageContent from '../components/IndexPageContent';
 // -----------------------------------------------
 
 function IndexPage() {
-	const id = 'indexContainer';
+	const id = 'indexPageContainer';
 
 	return (
 		<Layout id={id}>
 			<SEO title='Home' />
-			
+
 			<IndexPageContent />
 		</Layout>
 	);

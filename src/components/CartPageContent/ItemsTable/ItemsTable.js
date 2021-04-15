@@ -57,7 +57,7 @@ function ItemsTable() {
 	}
 
 	return (
-		<Table striped bordered hover variant='dark'>
+		<Table>
 			<thead>
 				<tr>
 					<th>Image</th>

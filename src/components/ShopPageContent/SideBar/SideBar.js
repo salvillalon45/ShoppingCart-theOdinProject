@@ -21,7 +21,7 @@ import Nav from 'react-bootstrap/Nav';
 
 function SideBar() {
 	return (
-		<Nav className='col-md-12 d-none d-md-block bg-light sidebar'>
+		<Nav className='col-md-12 d-none d-md-block bg-light sidebarContainer'>
 			<div className='sidebar-sticky'></div>
 			<Nav.Item>
 				<Nav.Link>

@@ -17,11 +17,15 @@ import SEO from '../components/seo';
 import CartPageContent from '../components/CartPageContent';
 // -----------------------------------------------
 
-const CartPage = () => (
-	<Layout>
-		<SEO title='Home' />
-		<CartPageContent />
-	</Layout>
-);
+function CartPage() {
+	const id = 'cartPageContainer';
+
+	return (
+		<Layout id={id}>
+			<SEO title='Home' />
+			<CartPageContent />
+		</Layout>
+	);
+}
 
 export default CartPage;

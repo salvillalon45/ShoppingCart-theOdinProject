@@ -20,6 +20,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 
 // Redux
 import { useDispatch } from 'react-redux';
@@ -30,7 +31,13 @@ import { createCartItem } from '../../components/Reusable/ReusableUtil';
 // -----------------------------------------------
 
 function ItemDetailPageContent(props) {
-	const { itemImage, itemName, itemPrice, itemIndex } = props.item;
+	const {
+		itemImage,
+		itemName,
+		itemPrice,
+		itemIndex,
+		itemDescription
+	} = props.item;
 	const [quantity, setQuantity] = React.useState(1);
 	const [addedToCart, setAddedToCart] = React.useState(false);
 	const dispatch = useDispatch();
@@ -54,38 +61,61 @@ function ItemDetailPageContent(props) {
 		<Container>
 			<Row>
 				<Col>
-					<h1>ItemDetailPage PAGE</h1>
-					<img src={itemImage} />
-					<p>{itemName}</p>
-					<p>{itemPrice}</p>
-					<p>{itemIndex}</p>
+					<Image src={itemImage} rounded />
+				</Col>
 
-					<Form onSubmit={onSubmit}>
-						<Form.Group controlId='exampleForm.ControlSelect1'>
-							<Form.Label>Add How Many To Cart?</Form.Label>
-							<Form.Control as='select' onChange={onChange}>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</Form.Control>
-						</Form.Group>
+				<Col>
+					<div className='detailsContainer'>
+						<div className='details'>
+							<p className='sec xxxLarge'>{itemName}</p>
+							<p className='xxLarge'>{itemPrice}</p>
+							<p className='xLarge bold'>{itemDescription}</p>
+						</div>
 
-						<Button variant='primary' type='submit'>
-							Add To Cart
-						</Button>
+						<div className='submissionContainer'>
+							<Form onSubmit={onSubmit}>
+								<Form.Group controlId='exampleForm.ControlSelect1'>
+									<Form.Label className='xLarge'>
+										Add How Many To Cart?
+									</Form.Label>
 
-						{addedToCart && <p>Item Has Been Added to Cart</p>}
+									<Form.Control
+										as='select'
+										onChange={onChange}
+									>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</Form.Control>
+								</Form.Group>
 
-						{addedToCart && (
-							<Link to='/cart'>
 								<Button variant='primary' type='submit'>
-									Go to Cart and Complete Order
+									Add To Cart
 								</Button>
-							</Link>
-						)}
-					</Form>
+
+								<div className='nextStepsContainer'>
+									{addedToCart && (
+										<p className='xLarge bold'>
+											Item Has Been Added to Cart
+										</p>
+									)}
+
+									{addedToCart && (
+										<Link to='/cart'>
+											<Button
+												variant='primary'
+												type='submit'
+											>
+												Go to Cart and Complete Order
+											</Button>
+										</Link>
+									)}
+								</div>
+							</Form>
+						</div>
+					</div>
 				</Col>
 			</Row>
 		</Container>
