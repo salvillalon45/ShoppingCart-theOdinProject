@@ -1,0 +1,34 @@
+// -----------------------------------------------
+//
+// Items Table Styling
+//
+// -----------------------------------------------
+
+.cartTable {
+	display: flex;
+	flex-direction: column;
+
+	.cartItemContainer {
+		display: flex;
+
+		.cartData {
+			display: flex;
+		}
+
+		.rowInfo {
+			padding: 25px;
+
+			#total {
+				text-decoration: underline;
+			}
+
+			p {
+				font-size: larger;
+			}
+		}
+	}
+
+	img {
+		width: 180px;
+	}
+}

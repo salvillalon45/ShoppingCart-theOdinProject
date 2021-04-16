@@ -17,6 +17,7 @@ $grey: #847e7b;
 $mediumBrown: #be8643;
 $mediumBrownHover: #9a6e38;
 $darkBrown: #f0dfd8;
+$cardHover: #ac401f;
 
 // Font Variables
 // -----------------------------------------------
@@ -31,10 +32,12 @@ $sec: 'Secular One', sans-serif;
 @import '../components/ShopPageContent/ShopPageContent.scss';
 @import '../components/ItemDetailPageContent/ItemDetailPageContent.scss';
 @import '../components/CartPageContent/CartPageContent.scss';
+@import '../components/ThankYouPageContent/ThankYouPageContent.scss';
 
 // Components
 // -----------------------------------------------
 @import '../components/Layout/Layout.scss';
+@import '../components/Reusable/Reusable.scss';
 
 html,
 body,

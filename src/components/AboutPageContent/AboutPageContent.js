@@ -15,6 +15,9 @@ import * as React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
+// Components
+import Line from '../Reusable/Line';
 // -----------------------------------------------
 
 function AboutPageContent() {
@@ -29,7 +32,7 @@ function AboutPageContent() {
 							Giving You The Styles You Need Since 1993
 						</p>
 
-						<div className='line' />
+						<Line />
 
 						<p>
 							Sal's Styles is dedicated to delivering an exclusive

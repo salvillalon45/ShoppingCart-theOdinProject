@@ -21,7 +21,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 // Images
-import image from '../../images/jb2.png';
+import image from '../../images/edit_jb2.jpg';
 import sq3 from '../../images/sq3.jpg';
 import sq2 from '../../images/sq2.jpg';
 import sq1 from '../../images/sq1.jpg';
@@ -31,17 +31,17 @@ function IndexPageContent() {
 	return (
 		<>
 			<Jumbotron
-				style={{ backgroundImage: `url(${image})` }}
 				className='jumbotronContainer'
+				style={{ backgroundImage: `url(${image})` }}
 			>
-				<div className='overlay'>
+				<div className='overlay '>
 					<div className='jumbotronText container'>
 						<div className='row'>
 							<div className='col-md-12 col-sm-12'>
-								<h1 className=''>Sal's Styles</h1>
+								<h1 className='bigHeading'>Sal's Styles</h1>
 
-								<p className=''>
-									Styles You Need For This Changing World
+								<p className='xLarge'>
+									Styles You Need For A Changing World
 								</p>
 							</div>
 						</div>

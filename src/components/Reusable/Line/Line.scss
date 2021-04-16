@@ -1,15 +1,12 @@
 // -----------------------------------------------
 //
-// Item Styling
+// Styling for Line
 //
 // -----------------------------------------------
 
-.card {
-	.card-body {
-		color: $black;
-	}
-
-	.card-body:hover {
-		color: $cardHover;
-	}
+.line {
+	background-color: $black;
+	width: 100%;
+	height: 2px;
+	margin-bottom: 20px;
 }

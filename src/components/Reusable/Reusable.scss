@@ -1,15 +1,8 @@
 // -----------------------------------------------
 //
-// Item Styling
+// Reusable Main Styling
 //
 // -----------------------------------------------
 
-.card {
-	.card-body {
-		color: $black;
-	}
-
-	.card-body:hover {
-		color: $cardHover;
-	}
-}
+@import './Line/Line.scss';
+@import './Item/Item.scss';

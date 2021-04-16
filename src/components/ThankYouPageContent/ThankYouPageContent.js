@@ -16,6 +16,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+// Components
+import Line from '../Reusable/Line';
+
 // Redux
 import { resetCart } from '../../state/actions/shoppingCartActions';
 import { useDispatch } from 'react-redux';
@@ -36,7 +39,13 @@ function ThankYouPageContent() {
 		<Container>
 			<Row>
 				<Col>
-					<p>Thank You For Shopping With Us!</p>
+					<p className='bigHeading '>
+						Thank You For Shopping With Us!
+					</p>
+
+					<Line />
+
+					<p className='larger'>We appreciate your business</p>
 				</Col>
 			</Row>
 		</Container>

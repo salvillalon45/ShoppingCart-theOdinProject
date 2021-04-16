@@ -56,7 +56,7 @@ function ShopPageContent(props) {
 				</Col>
 
 				<Col>
-					<ShopItems data={items} categoryShow={categoryShow} />;
+					<ShopItems data={items} categoryShow={categoryShow} />
 				</Col>
 			</Row>
 		</Container>
