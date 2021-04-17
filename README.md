@@ -74,12 +74,6 @@
 
 ## Development
 
--   I got this warning.
-
-    ```
-    React Hook React.useEffect has a missing dependency: 'createItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-    ```
-
 -   Learned how to use inline style to place a background image on a component! Really helped as I was having trouble figuring out how to place a background image in the scss file
 -   Learned how to create dynamic routing using Gatsby! This articles really helped:
     -   [https://medium.com/@ghoshanimesh/dynamic-routing-in-gatsby-b6ada258f6c2](https://medium.com/@ghoshanimesh/dynamic-routing-in-gatsby-b6ada258f6c2)
