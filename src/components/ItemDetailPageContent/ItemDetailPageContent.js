@@ -31,13 +31,7 @@ import { createCartItem } from '../../components/Reusable/ReusableUtil';
 // -----------------------------------------------
 
 function ItemDetailPageContent(props) {
-	const {
-		itemImage,
-		itemName,
-		itemPrice,
-		itemIndex,
-		itemDescription
-	} = props.item;
+	const { itemImage, itemName, itemPrice, itemDescription } = props.item;
 	const [quantity, setQuantity] = React.useState(1);
 	const [addedToCart, setAddedToCart] = React.useState(false);
 	const dispatch = useDispatch();

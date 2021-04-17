@@ -14,7 +14,6 @@ import * as React from 'react';
 
 // Gatsby
 import { Link } from 'gatsby';
-import { useStaticQuery, graphql } from 'gatsby';
 
 // Bootstrap
 import Card from 'react-bootstrap/Card';

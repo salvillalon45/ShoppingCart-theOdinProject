@@ -26,9 +26,6 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import EmailIcon from '@material-ui/icons/Email';
-
-// Images
-import GatsbyIcon from '../../../images/gatsby-icon.png';
 // -----------------------------------------------
 
 function Footer() {
