@@ -22,7 +22,8 @@ function AboutPage() {
 
 	return (
 		<Layout id={id}>
-			<SEO title='Home' />
+			<SEO title='The Odin Project: Shopping Cart' />
+
 			<AboutPageContent />
 		</Layout>
 	);
