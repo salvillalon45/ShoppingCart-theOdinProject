@@ -16,7 +16,6 @@ const initialState = {
 };
 
 const shoppingCartReducer = (state = initialState, action) => {
-	console.log({ action });
 	switch (action.type) {
 		case shoppingCartTypes.SAVE_CART_ITEM:
 			state.cartItems.push(action.payload.cartItem);

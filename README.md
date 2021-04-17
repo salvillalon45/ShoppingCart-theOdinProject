@@ -38,6 +38,8 @@
     -   I want to practice using CSS grid since I heard it can be a great alternative to CSS flexbox
     -   Instead of using React-Bootstrap I am going to see if I can just use Material UI. In this project, I used it to get the icons in the footer
 
+<br>
+
 ## Design
 
 -   Learned how to use tools like [Pixlr](<[https://pixlr.com/x/](https://pixlr.com/x/)>) and [Image Color Picker](<[https://imagecolorpicker.com/en](https://imagecolorpicker.com/en)>)
@@ -71,6 +73,12 @@
 <br>
 
 ## Development
+
+-   I got this warning.
+
+    ```
+    React Hook React.useEffect has a missing dependency: 'createItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+    ```
 
 -   Learned how to use inline style to place a background image on a component! Really helped as I was having trouble figuring out how to place a background image in the scss file
 -   Learned how to create dynamic routing using Gatsby! This articles really helped:

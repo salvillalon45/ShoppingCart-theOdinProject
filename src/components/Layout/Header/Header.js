@@ -25,33 +25,35 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 function Header() {
 	return (
 		<Navbar className='purpleBackground'>
-			<Navbar.Brand className='xxLarge'>
-				<Link to='/'>Sal's Styles</Link>
+			<Navbar.Brand>
+				<Link className='bigHeading' to='/'>
+					Sal's Styles
+				</Link>
 			</Navbar.Brand>
 
 			<Navbar.Toggle />
 
 			<Navbar.Collapse className='justify-content-end'>
 				<Nav>
-					<Nav.Link>
-						<Link to='/'>Home</Link>
-					</Nav.Link>
+					<Link className='nav-link' to='/'>
+						Home
+					</Link>
 
-					<Nav.Link>
-						<Link to='/about'>About</Link>
-					</Nav.Link>
+					<Link className='nav-link' to='/about'>
+						About
+					</Link>
 
-					<Nav.Link>
-						<Link to='/shop' state={{ categoryShow: 'all' }}>
-							Shop
-						</Link>
-					</Nav.Link>
+					<Link
+						className='nav-link'
+						to='/shop'
+						state={{ categoryShow: 'all' }}
+					>
+						Shop
+					</Link>
 
-					<Nav.Link>
-						<Link to='/cart'>
-							<ShoppingCartIcon />
-						</Link>
-					</Nav.Link>
+					<Link className='nav-link' to='/cart'>
+						<ShoppingCartIcon />
+					</Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>

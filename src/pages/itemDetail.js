@@ -18,9 +18,12 @@ import ItemDetailPageContent from '../components/ItemDetailPageContent';
 // -----------------------------------------------
 
 function ItemDetailPage(props) {
-	console.table(props);
 	const id = 'itemDetailPageContainer';
-	const item = props.location.state.itemObj;
+	let item = {};
+
+	if (props.location.state) {
+		item = props.location.state.itemObj;
+	}
 
 	return (
 		<Layout id={id}>

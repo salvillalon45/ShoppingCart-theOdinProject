@@ -10,7 +10,6 @@
 
 // React
 import * as React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 
 // Bootstrap
 import Container from 'react-bootstrap/Container';
@@ -43,9 +42,7 @@ function ShopPageContent(props) {
 		}
 	}
 
-	React.useEffect(() => {
-		determineCategory();
-	}, [categoryShow]);
+	React.useEffect(determineCategory, [categoryShow]);
 
 	return (
 		<Container>
@@ -62,5 +59,10 @@ function ShopPageContent(props) {
 		</Container>
 	);
 }
+
+// // Specifies the default values for props:
+// ShopPageContent.defaultProps = {
+// 	categoryShow: 'all'
+// };
 
 export default ShopPageContent;

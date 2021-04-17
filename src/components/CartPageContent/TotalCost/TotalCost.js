@@ -28,7 +28,12 @@ function TotalCost() {
 			total = total + total_price;
 		});
 
-		return total;
+		return new Intl.NumberFormat('en-US', {
+			style: 'currency',
+			currency: 'USD'
+		}).format(total);
+
+		// return total;
 	}
 
 	return (
@@ -36,7 +41,7 @@ function TotalCost() {
 			<p className='sec bold larger upper'>Order Summary</p>
 
 			<p>
-				Total Cost: <b>${calculateTotalCost()}</b>
+				Total Cost: <b>{calculateTotalCost()}</b>
 			</p>
 		</div>
 	);

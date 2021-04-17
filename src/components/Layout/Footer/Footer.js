@@ -41,16 +41,12 @@ function Footer() {
 								<li>About Us</li>
 							</Link>
 
-							<Link to='/shop'>
+							<Link to='/shop' state={{ categoryShow: 'all' }}>
 								<li>Shop</li>
 							</Link>
 
 							<a href='https://github.com/salvillalon45/theOdinProject-ShoppingCart'>
 								<li>Our GitHub Repository</li>
-							</a>
-
-							<a href='https://www.linkedin.com/in/salvadorvillalon/'>
-								<li>The Developer Who Made This</li>
 							</a>
 						</ul>
 					</Col>

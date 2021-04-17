@@ -116,4 +116,13 @@ function ItemDetailPageContent(props) {
 	);
 }
 
+ItemDetailPageContent.defaultProps = {
+	item: {
+		itemImage: '',
+		itemName: '',
+		itemPrice: '',
+		itemDescription: ''
+	}
+};
+
 export default ItemDetailPageContent;

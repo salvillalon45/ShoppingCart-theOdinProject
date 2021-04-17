@@ -1,7 +1,7 @@
 // -----------------------------------------------
 //
-// Pages -> cart.js
-// Desc: Cart Page
+// Pages -> 404.js
+// Desc: 404 Page
 //
 // -----------------------------------------------
 
@@ -14,19 +14,18 @@ import * as React from 'react';
 // Components
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import CartPageContent from '../components/CartPageContent';
 // -----------------------------------------------
 
-function CartPage() {
-	const id = 'cartPageContainer';
-
+function NotFoundPage() {
 	return (
-		<Layout id={id}>
-			<SEO title='The Odin Project: Shopping Cart' />
+		<Layout>
+			<SEO title='404: Not found' />
 
-			<CartPageContent />
+			<h1>404: Not Found</h1>
+
+			<p>You just hit a route that doesn&#39;t exist... the sadness.</p>
 		</Layout>
 	);
 }
 
-export default CartPage;
+export default NotFoundPage;

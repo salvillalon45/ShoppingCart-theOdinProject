@@ -20,12 +20,17 @@ import ShopPageContent from '../components/ShopPageContent';
 function ShopPage(props) {
 	const { state } = props.location;
 	const id = 'shopPageContainer';
+	let result = 'all';
+
+	if (state) {
+		result = state.categoryShow;
+	}
 
 	return (
 		<Layout id={id}>
 			<SEO title='The Odin Project: Shopping Cart' />
 
-			<ShopPageContent categoryShow={state.categoryShow} />
+			<ShopPageContent categoryShow={result} />
 		</Layout>
 	);
 }
