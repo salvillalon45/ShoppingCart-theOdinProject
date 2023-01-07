@@ -23,11 +23,11 @@
 
 |  Color               |  Hex                                                                 |
 | -------------------- | -------------------------------------------------------------------- |
-|  Brown               |  ![#f6ecea](https://via.placeholder.com/10/f6ecea?text=+) `#f6ecea`  |
-|  Black               |  ![#212122](https://via.placeholder.com/10/212122?text=+) `#212122`  |
-|  Medium Brown        |  ![#be8643](https://via.placeholder.com/10/be8643?text=+) `#be8643`  |
-|  Medium Brown Hover  |  ![#9a6e38](https://via.placeholder.com/10/9a6e38?text=+) `#9a6e38`  |
-|  Card Hover          |  ![#ac401f](https://via.placeholder.com/10/ac401f?text=+) `#ac401f`  |
+|  Brown               |  ![#f6ecea](https://placehold.co/15x15/f6ecea/f6ecea.png) `#f6ecea`  |
+|  Black               |  ![#212122](https://placehold.co/15x15/212122/212122.png) `#212122`  |
+|  Medium Brown        |  ![#be8643](https://placehold.co/15x15/be8643/be8643.png) `#be8643`  |
+|  Medium Brown Hover  |  ![#9a6e38](https://placehold.co/15x15/9a6e38/9a6e38.png) `#9a6e38`  |
+|  Card Hover          |  ![#ac401f](https://placehold.co/15x15/ac401f/ac401f.png) `#ac401f`  |
 
 <br>
 
