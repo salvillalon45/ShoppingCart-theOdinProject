@@ -1,4 +1,5 @@
-# [The Odin Project: Javascript] - Project: Shopping Cart
+# Shopping Cart
+[The Odin Project: Javascript] - Project: Shopping Cart
 
 ## Intro
 
@@ -13,6 +14,9 @@
     -   [Pacsun](https://www.pacsun.com/)
 
 -   You can find more on the project here: [The Odin Project - Shopping Cart](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/shopping-cart)
+
+### Demo
+<img alt="Shopping Cart Demo" src="./shopping_cart.gif" width="600" />
 
 ### 📗 Fonts used
 
