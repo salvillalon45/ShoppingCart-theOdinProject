@@ -13,7 +13,8 @@
     -   Photo by <a href="https://unsplash.com/@brookecagle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke Cagle</a> on <a href="https://unsplash.com/s/photos/men-fashion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     -   [Pacsun](https://www.pacsun.com/)
 
--   You can find more on the project here: [The Odin Project - Shopping Cart](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/shopping-cart)
+- Project Task: [The Odin Project - Shopping Cart](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/shopping-cart)
+- View Project: http://sv_shoppingcart.surge.sh/
 
 ### Demo
 <img alt="Shopping Cart Demo" src="./shopping_cart.gif" width="600" />
